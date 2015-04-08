@@ -2,7 +2,7 @@
   "name": "alexandria",
   "version": "0.0.1",
   "description": "Library system for ACM @ UIUC",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/mathur/alexandria",
   "dependencies": {
-    "express": "^4.12.3"
+    "express": "^4.12.3",
+    "less-middleware": "~2.0.1",
+    "mongodb": "~1.4.35",
+    "mongoskin": "~1.4.13"
   }
 }
