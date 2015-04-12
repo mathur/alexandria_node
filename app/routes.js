@@ -3,7 +3,7 @@ var Book = require('./models/book');
 function getBooks(res){
 	Book.find(function(err, books) {
 		if (err)
-			res.send(err)
+			res.send(err);
 		res.json(books);
 	});
 };
@@ -14,17 +14,14 @@ module.exports = function(app) {
 	});
 
 	app.post('/api/books', function(req, res) {
-
 		Book.create({
 			text : req.body.text,
 			done : false
 		}, function(err, book) {
 			if (err)
 				res.send(err);
-
 			getBooks(res);
 		});
-
 	});
 
 	app.checkout('/api/books/:book_id', function(req, res) {
@@ -33,7 +30,6 @@ module.exports = function(app) {
 		}, function(err, book) {
 			if (err)
 				res.send(err);
-
 			getBooks(res);
 		});
 	});
