@@ -1,8 +1,8 @@
 {
-  "name": "alexandria",
-  "version": "0.0.1",
-  "description": "Library system for ACM @ UIUC",
-  "main": "app.js",
+  "name"         : "alexandria",
+  "version"      : "0.0.1",
+  "description"  : "ACM@UIUC's Library System",
+  "main"         : "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,16 +10,17 @@
     "type": "git",
     "url": "https://github.com/mathur/alexandria.git"
   },
-  "author": "Rohan Mathur & Stephen Pinkerton",
+  "author"       : "Rohan Mathur & Stephen Pinkerton",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mathur/alexandria/issues"
   },
   "homepage": "https://github.com/mathur/alexandria",
-  "dependencies": {
-    "express": "^4.12.3",
-    "less-middleware": "~2.0.1",
-    "mongodb": "~1.4.35",
-    "mongoskin": "~1.4.13"
-  }
+  "dependencies" : {
+    "express"    : "~4.7.2",
+    "mongoose"   : "~3.6.2",
+    "morgan"     : "~1.2.2",
+    "body-parser": "~1.5.2",
+    "method-override": "~2.1.2"
+    }
 }
